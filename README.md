@@ -305,3 +305,97 @@ Essa função executa repetidamente, a cada 3 segundos, a verificação com o se
 ![js_espera_verificar](https://github.com/user-attachments/assets/c53b6d21-05da-45d2-9418-9d710f1f0fc1)
 
 
+
+
+#PÁGINA resultado.html
+
+
+##Estrutura HTML da página resultado.html
+
+
+
+
+
+Esta é a seção inicial de uma página HTML, com idioma definido para português brasileiro, sendo que o objetivo principal da função é fornecer instruções ao navegador de como a página deve ser carregada e exibida. Aqui também é definida a codificação que perita acentos, emojis e caracteres especiais. Proporciona responsividade à página ajustando a largura à tela de dispositivos móveis. Também é nesta seção que é definida o título do navegador. E aqui ainda é importado o framework Bootstrap 5.3.2 e também o arquivo de estilos personalizados do CSS.
+
+
+
+![inicio_resutado](https://github.com/user-attachments/assets/2ef61aa5-a1f0-44ce-807f-b9048f310ebc)
+
+Neste trecho do código foi criado um container centralizado através de bootstrap. A página exibe o título "Sorteador de Lista" de forma centralizada horizontalmente e com margem vertical “my-4” (margem do eixo vertical y – topo e base).
+Esse bloco mostra a mensagem final do sorteio com um emoji de comemoração (classe party-popper). Há a exibição da mensaem "Parabésn". E também aqui será exibida a posição do usuário na lista sorteada.
+
+
+![image](https://github.com/user-attachments/assets/9b323f4d-062c-4fb6-bbb1-033198d040e9)
+
+Este bloco é usado para oferecer feedback visual (confete) e permitir que o usuário salve ou saia da página após ver o resultado do sorteio. Ele melhora a experiência do usuário com interatividade e opções claras. Aqui neste trecho há a opção de salvar uma cópia da lista sorteada. Há uma adição de margem superior para espaçamento visual. Há dois botões, um para salvar cópia da lista ou outro para sair da página. Nesse caso, ao clicar em "sair" ou após o download ser completado a página deve ser redirecionada para a página de agradecimento.
+
+![image](https://github.com/user-attachments/assets/e2eb507c-63fd-4d3e-966e-8ea25563e69b)
+
+
+Este código trata-se da importação das bibliotecas de JavaScript. E também a importação do script personalizado resultado.js
+
+
+![resultado_bibliot](https://github.com/user-attachments/assets/e7e7dff1-5c9a-4d38-a841-578c5040d2ea)
+
+
+##Estrutura CSS da página resultado.html
+
+
+Este trecho é responsável pela estilzação do container principal onde estará a informação do resultado do sorteio, mais especificamente vai mostrar a posição que o usuário está na lista sorteada. O fundo do container será branco, com bordas arredondadas em 10 pixels, com espaço interno de 30 pixels, com sombra leve, margem superior de 20 pixels (espaço acima do container). O texto de dentro do container fica centralizado horizontalmente e o carregamento visual desse bloco é de 0,5 segundos. 
+
+
+![resultado_container](https://github.com/user-attachments/assets/171d7aa5-3f4a-43ac-82bb-d88d9c6a983e)
+
+
+
+Define um espaço interno (padding) de 20 pixels em todos os lados do conteúdo dentro da #mensagem-resultado. 
+Isso garante que o texto e os demais elementos internos não fiquem colados nas bordas do bloco, melhorando a legibilidade.
+
+
+![resultado_padding](https://github.com/user-attachments/assets/ed7d5356-bbba-4dc9-aa7a-b02f85b770fd)
+
+
+Aqui foram usadas classes para aplicar estilos à animação. O tamanho da fonte (no caso o emoji) é quatro vrezes o tamanho da fonte-base. A animação tem uma duração de 0,5 segundo por ciclo. tem velocidade suavizada pelo "ease", ela se repete infinitamente e alterna a direção indo para cima e para baixo.
+
+
+![image](https://github.com/user-attachments/assets/a213bf35-5b0e-4d0a-87aa-08c9c4bb07e8)
+
+Nesta parte, o CSS aplica estilo ao texto que mostra o resultado, ou seja, a posição do usuário na lista, fonte tem 1,5 vezes o tamanho padrão, a cor do texto é preto e o espaçamento vertical é de 20 pixels acima e abaixo do elemento, separando visualmente dos demais itens.
+
+
+![image](https://github.com/user-attachments/assets/e21994d8-ba16-4d73-a3fd-8384594b1d58)
+
+
+Esta parte do código estliza o elemento que mostrará a posição do resultado. A informação vai aparecer em negrito com cor de tom azul (padrão do Boostratp) e o tamanho da fonte será de duas vezes mais o tamanho padrão. 
+
+![image](https://github.com/user-attachments/assets/adeee041-c6d2-4dda-9469-c3c0cadb0518)
+
+Aqui foi definido o estilo das opções de "salvar" e "sair". Foi adicionado um espaço acima do bloco e também um espaço interno no topo, 
+criando uma separação entre a borda e o conteúdo interno. Foi inserida também uma linha no topo que funciona como uma divisão visual entre o conteúdo de cima e as opções.  
+
+![image](https://github.com/user-attachments/assets/7d5f1b5f-cade-44c2-b69d-1a1f11744b25)
+
+Esta parte do código estiliza o container dos botões. Onde foi aplicado layout flexbox, centraliza horizontalmente os botões dentro do container e define um espaço de 15 pixels entre os dois botões.
+
+![image](https://github.com/user-attachments/assets/93be1c53-3a2a-4a6a-9dc1-b132ec513a2a)
+
+
+Aqui implementamos a responsividade para adaptar o layout da página para dispositivos móveis. Nesse caso, aplica estilos quando a largura da tela for menor ou igual a 768 pixels ou também quando for menor ou igual a 480 pixels.
+
+![image](https://github.com/user-attachments/assets/72d1dc5f-7c11-474d-ba76-0f98e21abc86)
+
+
+A animação de confeti foi estilizada com @Keyframes. Nesse caso, foi utilizado um efeito de transição, onde o elemento ganha um efeito de "surgimento" com a estilização da opacidade e leve deslizamento. Move o elemento verticalmente para 15 pixels acima e para sua posição original.
+
+
+![image](https://github.com/user-attachments/assets/24574b5b-e2dc-4f38-915c-30f517a754c5)
+
+
+##Estrutura JavaScript da página resultado.html
+
+
+
+
+
+
