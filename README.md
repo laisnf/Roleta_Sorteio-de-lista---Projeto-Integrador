@@ -413,7 +413,14 @@ Neste trecho, o código adiciona eventos ao clique dos botões "salvar" e "sair"
 
 ![image](https://github.com/user-attachments/assets/a816f759-0eba-42ef-bfe6-b242adf81581)
 
+O código é acionado quando a página termina de carregar e adiciona uma ação ao botão "salvar". Quando o botão é clicado ele chama a função gerarPDF() de forma assíncrona (async/await). Caso seja bem sucedido ele redireciona o usuário para a página download.html. Se der erro exibe no console sem redirecionar o usuário.
 
+![image](https://github.com/user-attachments/assets/ed58f29a-66d1-4841-80cc-9432a8808a16)
+
+
+Ness trecho de código, ao clicar "sair" o usuário é redirecionado para a página de agradecimento.
+
+![image](https://github.com/user-attachments/assets/259d3f5c-b930-45dc-8ab3-ba0a5002581a)
 
 
 
