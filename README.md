@@ -396,6 +396,29 @@ A animação de confeti foi estilizada com @Keyframes. Nesse caso, foi utilizado
 
 
 
+Este trecho do código garante que todo o conteúdo da página seja totalmente carregado. Essa parte também faz referência aos botões "salvar" e "sair".
+
+![image](https://github.com/user-attachments/assets/e4259cd2-e033-4bf0-b34c-311ab99651cc)
+
+
+
+Este trecho de código realiza uma simulação de sorteio de uma posição e a exibe em um elemento da página. Nessa caso, a função que simula o sorteio de uma 
+posição retorna um valor que representa a posição sorteada.O valor retornado é armazenado na variável "posição" e esse valor é exibido no elemento HTML como um <span>.
+
+
+![image](https://github.com/user-attachments/assets/73c5e505-4e51-4964-b176-89f0a02bdbd0)
+
+
+Neste trecho, o código adiciona eventos ao clique dos botões "salvar" e "sair". Quando o botão "salvar" é acionado, a função salvarLista() é executda. Quando o botão "sair" é acionado a função redireciona o usuário para a página agradecimento.html.
+
+![image](https://github.com/user-attachments/assets/a816f759-0eba-42ef-bfe6-b242adf81581)
+
+
+
+
+
+
+
 
 
 
