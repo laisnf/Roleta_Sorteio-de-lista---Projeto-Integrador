@@ -1,17 +1,17 @@
-                                                                                         # **Página mobile do formulário**
+                                                                                         #**Página mobile do formulário**
 
   A página index do projeto Sorteador de Lista foi criada para disponibilizar um formulário ao usuário do Sorteador para que aquele coloque seus dados na roleta a partir de um dispositivo móvel e assim participe com seu nome no sorteio 
   de nomes. Essa página abrirá para o usuário através de um QRCode gerado na página inicial do sorteio. As tecnologias utilizadas foram HTML5. CSS3 e JavaScript.
   
                                                                                                                   
-                                                                                            ## HTML da página Index
+                                                                                            ##HTML da página Index
   Foi criada uma estrutura em HTML com um formulário para que o usuário inscreva seus dados (nome, equipe e supervisão) na lista que será sorteada. Nessa página, também serão exibidos os dados do proprietário da litas (empresa, departamento,
   data e turno de trabalho).
 
 
 
        
-	A tag <head> funciona como um container onde colocamos as configurações do código e metadados. Fornece instruções e dados importantes para renderização e um bom funcionamento da página.
+  A tag <head> funciona como um container onde colocamos as configurações do código e metadados. Fornece instruções e dados importantes para renderização e um bom funcionamento da página.
   Recebe metadados (dados sobre dados que fornecem contexto ou descrevem dados) para informar o browser como deve interpretar e exibir o conteúdo da página.
 	Há um metadado que define o padrão que suporta caracteres especiais, emojis e acentos para quase todos os idiomas. E um metadado que define configurações de responsividade para dispositivos móveis, 
   fazendo com que a largura da página se ajuste ao tamanho da tela do dispositivo.
