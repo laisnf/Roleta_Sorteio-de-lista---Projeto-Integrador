@@ -1,10 +1,10 @@
-                                                                                         #**Página mobile do formulário**
+#Página mobile do formulário
 
   A página index do projeto Sorteador de Lista foi criada para disponibilizar um formulário ao usuário do Sorteador para que aquele coloque seus dados na roleta a partir de um dispositivo móvel e assim participe com seu nome no sorteio 
   de nomes. Essa página abrirá para o usuário através de um QRCode gerado na página inicial do sorteio. As tecnologias utilizadas foram HTML5. CSS3 e JavaScript.
   
                                                                                                                   
-                                                                                            ##HTML da página Index
+##HTML da página Index
   Foi criada uma estrutura em HTML com um formulário para que o usuário inscreva seus dados (nome, equipe e supervisão) na lista que será sorteada. Nessa página, também serão exibidos os dados do proprietário da litas (empresa, departamento,
   data e turno de trabalho).
 
@@ -61,7 +61,7 @@ Código de importação do arquivo formulario.js.
 
 ![script](https://github.com/user-attachments/assets/ef6cb7c3-f2cc-437f-8fa3-e4280714c927)
 
-                                                                                                  ##CSS da página Index
+##CSS da página Index
                                                                                                   
 Este é o arquivo CSS que define estilos para página index.html complementando os estilos do Bootstrap. 
 Ele foi dividido em 7 blocos de estilos: cabeçalho; body; títulos e textos; formulário; alertas e mensagens e regras de responsividade.
@@ -97,7 +97,7 @@ Os botoẽs foram customizados de forma que utilizem todo o espaçamento e com d
 ![css_btn](https://github.com/user-attachments/assets/6ae0cc74-a7be-4425-8785-9e8cfd5021c3)
 
 
-                                                                                    ##JavaScript da página Index
+##JavaScript da página Index
 
 
 
