@@ -1,11 +1,16 @@
 #Página mobile do formulário
 
 
+
   A página index do projeto Sorteador de Lista foi criada para disponibilizar um formulário ao usuário do Sorteador para que aquele coloque seus dados na roleta a partir de um dispositivo móvel e assim participe com seu nome no sorteio 
-  de nomes. Essa página abrirá para o usuário através de um QRCode gerado na página inicial do sorteio. As tecnologias utilizadas foram HTML5. CSS3 e JavaScript.
+  de nomes. Essa página abrirá para o usuário através de um QRCode gerado na página inicial do sorteio. As tecnologias utilizadas foram HTML5. CSS3, JavaScript e framework Bootstrap 5.3.2.
+
+
   
-                                                                                                                  
+
+
 ##HTML da página Index
+
 
 
 
@@ -67,7 +72,11 @@ Código de importação do arquivo formulario.js.
 ![script](https://github.com/user-attachments/assets/ef6cb7c3-f2cc-437f-8fa3-e4280714c927)
 
 
+
+
 ##CSS da página Index
+
+
 
 
                                                                                                   
@@ -105,7 +114,14 @@ Os botoẽs foram customizados de forma que utilizem todo o espaçamento e com d
 ![css_btn](https://github.com/user-attachments/assets/6ae0cc74-a7be-4425-8785-9e8cfd5021c3)
 
 
+
+
+
+
 ##JavaScript da página Index
+
+
+
 
 
 
@@ -173,8 +189,119 @@ O seguinte trecho faz o processo de inicialização da página, chamando a funç
 
 
 
+#Página mobile de espera do sorteio
 
 
 
+
+
+
+Esta página tem por objetivo avisar o usuário para que aguarde o sorteio para que a posição dele na lista sorteada seja exibida.
+
+
+
+##EStrutura HTML da página de espera.html
+
+
+Esta é a seção inicial de uma página HTML, com idioma definido para português brasileiro, sendo que o objetivo principal da função é fornecer instruções ao navegador de como a página deve ser carregada e exibida. Aqui também é definida a codificação que perita acentos, emojis e caracteres especiais. Proporciona responsividade à página ajustando a largura à tela de dispositivos móveis. Também é nesta seção que é definida o título do navegador. E aqui ainda é importado o framework Bootstrap 5.3.2 e também o arquivo de estilos personalizados do CSS.
+
+![image](https://github.com/user-attachments/assets/830141d3-97ae-419b-91cb-4ccc50cfdefa)
+
+
+O seguinte código é a estrutura da página de carregamento, enquanto o sorteio é processado. Ele usa um conatiner principal do Boostrap que centraliza e organiza com margens automáticas. Cria ainda o titulo da página. 
+Utiiza-se margin-botton (margem inferior) automática do Bootstrap.
+Há ainda uma animação de carregamento (spinner) e ainda role="status" para acessibilidade para deficientes visuais. O sistema mostra ainda uma mensagem ao usuário pedindo que não fecha a página para que se processe o sorteio. 
+Há também um contador para que mostre um tempo de espera. 
+
+
+
+![div_espera](https://github.com/user-attachments/assets/7d831b9c-93c5-4ac2-9e44-e358eb1553a2)
+
+Aqui um script importa o JavaScript do Bootstrap 5.3.2 a partir de uma CDN (Content Delivery Network), permitindo o uso de componentes dinâmicos do Bootstrap (como modais, carrosséis, entre outros).
+Ocorre aqui ainda ocorre o carregamento do arquivo JavaScript personalizado.
+
+
+![image](https://github.com/user-attachments/assets/1f37c53d-d3e7-4163-a1ce-c108f56b34ec)
+
+
+
+
+##CSS da página de espera.html
+
+
+Nesta parte do código foram utilizados alguns códigos CSS para complementação do Boostrap
+
+
+
+Este trecho do código define o estilo visual para o container principal da seção "aguarde" da página. Logo, a cor de fundo do referido container é cinza claro. 
+A borda é arredondada em 10 pixels e aciona um espaçamento interno de 30 pixels em todos os lados, o que afasta o conteúdo das bordas. Há uma sombra leve ao redor e 
+espaçamento superior (margin-top) de 20 pixels, afastando o container do elemento acima.
+
+
+![espera_conteiner](https://github.com/user-attachments/assets/7c1db35a-fa4f-4894-9333-25383f1454c6)
+
+
+
+
+Aqui é feita a estilização da mensagem a ser exibida ao usuário. Dessa forma, a mensagem é centralizada horizontalmente com uma margem vertical de 30 pixels acima e abaixo do elemento. 
+A mensagem será exibida em cor preta e espessura média de 500. A cor do título principal é azul e está centralizado.
+
+
+
+![espera_mensagem](https://github.com/user-attachments/assets/d5ad3932-2216-41eb-ab0c-e8796f5fdacc)
+
+
+
+A classe contador define bloco quadrado que possui espaçamento superior de 20 pixels; dimensões de 100x100 pixels,  formando um quadrado, com bordas arredondadas (border-radius) e 20 pixels, 
+inicialmente com fundo vermelho e fonte branca de tamanho 15 pixels e em negrito. O conteúdo é centralizado. E a animação é aplicada no quadrado girando por 2 segundos de forma infinita e mudando de cor.
+Todo elemento é centralizado horizontalmente na página.
+
+
+![espera_contador](https://github.com/user-attachments/assets/203c4f53-a68e-473b-8bda-4b72a597a618)
+
+
+
+O seguinte código é responsável por definir uma animação personalizada denominada "rotateColor", usando a regra @ketframes.  
+O objetivo é aplicar uma rotação de 360 graus e alterar a cor de fundo em ciclos infinitos, ou seja, o quadrado vai girar e mudar de cor (tons de azul, vermelho e verde) continumente. 
+
+
+
+![espera_keyframe](https://github.com/user-attachments/assets/2e261427-e790-4e72-bd6d-1f76a0a6d0a5)
+
+
+Aqui implementamos a responsividade para adaptar o layout da página para dispositivos móveis. Nesse caso, aplica estilos quando a largura da tela for menor ou igual a 768 pixels ou também quando for menor ou igual a 480 pixels. Reduzindo o padding (preenchimento) para 20 pixels ou para 15 pixels e ajusta o container e o rotateColor.
+
+
+![espera_768](https://github.com/user-attachments/assets/fed400d6-2e74-481e-92e8-c85b630fdeb1)
+
+
+
+![espera_480](https://github.com/user-attachments/assets/3479917f-d519-47f9-b8af-57378d521f52)
+
+
+##JavaScript da página espera.html
+
+
+Nesta parte do código ocorre uma simulação de carregamento de 3 segundos exibindo uma mensagem de sucesso, substituindo a animação de carregamento por um ícone de texto, mudando a cor para verde como um feedback ao usuário. 
+Inicialmente, o document.add espera o carregamento completo da página HTML. O "const quadrado" e "const spinner" guardam em variáveis os elementos HTML que poderão ser manipulados com JavaScript.
+
+
+![espera_js_simulacao](https://github.com/user-attachments/assets/f117a486-a3da-457a-b077-9d4abf452ad4)
+
+
+Esse trecho de código define uma função assíncrona chamada verificarSorteioConcluido, que serve para verificar se um sorteio foi finalizado e, se sim, 
+redirecionar o usuário para uma nova página com o resultado. 
+A função assíncrona executa tarefas mais lentas sem travar a página, esperando a resposta de requisição.
+O "fetch()" faz a requisição e a rota deve trazer o status do sorteio, enquanto que o "await" faz o código esperar a resposta. 
+Se houver erro o sistema vai para o catch que exibirá o erro o console. Caso não tenha erro  e o sorteio for finalizado redireciona automaticamente para a página resultado.html.
+
+
+![js_espera_assincrona](https://github.com/user-attachments/assets/8be2b286-b4f6-4f42-8ec1-8a1ebd0f6b49)
+
+
+Essa função executa repetidamente, a cada 3 segundos, a verificação com o servidor se o sorteio foi concluído, sendo que se foi concluído será automaticamente redirecionado para a página seguinte.
+
+
+![js_espera_verificar](https://github.com/user-attachments/assets/c53b6d21-05da-45d2-9418-9d710f1f0fc1)
 
 
