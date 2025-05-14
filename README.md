@@ -1,4 +1,4 @@
-#Página mobile do formulário
+#Páginas mobile 
 
 
 
@@ -9,7 +9,7 @@
   
 
 
-##HTML da página Index
+##Estrutura HTML da página Index
 
 
 
@@ -421,6 +421,89 @@ O código é acionado quando a página termina de carregar e adiciona uma ação
 Ness trecho de código, ao clicar "sair" o usuário é redirecionado para a página de agradecimento.
 
 ![image](https://github.com/user-attachments/assets/259d3f5c-b930-45dc-8ab3-ba0a5002581a)
+
+
+#Página download.html
+
+
+##Estrutura HTML da página download.html
+
+
+
+Esta é a seção inicial de uma página HTML, com idioma definido para português brasileiro, sendo que o objetivo principal da função é fornecer instruções ao navegador de como a página deve ser carregada e exibida. Aqui também é definida a codificação que perita acentos, emojis e caracteres especiais. Proporciona responsividade à página ajustando a largura à tela de dispositivos móveis. Também é nesta seção que é definida o título do navegador. E aqui ainda é importado o framework Bootstrap 5.3.2 e também o arquivo de estilos personalizados do CSS.
+
+
+![image](https://github.com/user-attachments/assets/110dbeaa-68a7-4fb2-b2e7-f5656f415ac9)
+
+
+
+Aqui a tag <header> representa o cabeçalho de uma seção da página e contém o título "Sorteador de Lista". E a tah <h1> defini o título principal da página. O texto é centralizado devido ao atriibuto "text-center" e "my-4" aplica uma margem vertical (topo e base) de nível 4 (em uma escala de 0 a 5, espaçando o título. E o código está ainda dentro de uma div para separar o título do conteúdo que aparece logo abaixo (mensagens ao usuário).
+
+
+![titulo_down](https://github.com/user-attachments/assets/ca3463ed-d74a-48e7-82fc-74f00e41c03b)
+
+
+
+Este código cria um container para exibir uma mensagem de download em adamento, indicando um caregamento. Para isso, o conteúdo foi envolvido por uma div  e uma margem inferior foi inserida. Foi adicionado também um spinner de carregamento fica de forma circula e tem cor de tonalidade azul.
+Os textos de mensagem foram definidos pela tag <h3> com uma margem superior e há um parágrafo com texto secundário  em cor mais leve.
+
+
+
+![mensagem_down](https://github.com/user-attachments/assets/68067d8c-cd6f-4f08-9c89-9b96ce05bada)
+
+
+Este trecho de código cria um elemento visual animado com um ícone de presente. Fida dentro de um container div e possui um identificador "'quadrado-status". A classe do ícone é definida por "icone", sendo que a estilização independe container principal.
+
+![image](https://github.com/user-attachments/assets/90b4c608-7ad0-4ca8-b0f8-1747c26a5184)
+
+Esta parte do código cria um botão para cancelar o download que estaria em andamento. Nesse caso usa um identificador para tornar fácil a estilização com CSS e JavaScript. Aqui é definido ainda a cor cinza do botão e ele muda de cor ao passar o mouse. Posssui ainda margem superior para espaçamento entre elementos, para que não fique colado com elementos acima.
+
+![image](https://github.com/user-attachments/assets/249b2d77-3962-4f3a-a22b-d9d56c0fca33)
+
+Este código trata-se da importaçao das bibliotecas de JavaScript.
+
+![image](https://github.com/user-attachments/assets/9f8e0033-5a82-4894-9484-45c8b3815e6f)
+
+
+Este trecho do código define o estilo visual do container que mostra o carregamento do download. Define o background como branco, com bordas arredondadas em 10 pixels sombra sutil e espaçamento interno de 30 pixels, distanciando o conteúdo das bordas. A margem superior é de 20 pixels e  o alinhamento é central.
+
+![image](https://github.com/user-attachments/assets/a21ed96d-e67a-4e57-b774-7520cb4aa9b3)
+
+
+Nesta parte do código ocorre a personalização do títula h3 dento do container de mensagens. Dessa forma, a cor do h3 será preta, com espessura negrita, espaçamento inferior de de 10 pixels, melhorando a organização do espaço.
+
+
+![image](https://github.com/user-attachments/assets/7f9642db-b0a2-40a2-ad14-fbca4a4318ee)
+
+
+Aqui define o estilo do elemento da classe "icone" que foi usado com um emoji de presente. Então, o tamanho ícone em 5rm que equivale a cinco vezes o tamanho da fonte raiz. A margem inferior é de 20 pixels e serve para separar o ícone dos elementos abaixo. Display inline-block permite que o ícone se comporte como um bloco aceitando margens e dimensionamento. E ainda deixa o ícone grande, com espaçamento adequado em relação aos outros elementos.
+
+![image](https://github.com/user-attachments/assets/ccd51785-aeff-42fd-ac6e-2f40cddf6483)
+
+
+Aqui implementamos a responsividade para adaptar o layout da página para dispositivos móveis. Nesse caso, aplica estilos quando a largura da tela for menor ou igual a 768 pixels ou também quando for menor ou igual a 480 pixels.
+
+
+![image](https://github.com/user-attachments/assets/fde6ede8-a68f-472c-a5dc-79e2b159e8b2)
+
+Este trecho é executado quando todo o conteúdo HTML da página é totalmente carregado. Seleciona também elementos para posterior manipulação. Controla e exibição visual do progresso de download, a interação do usuário (cancelamento)
+
+![image](https://github.com/user-attachments/assets/6eaaaa16-e837-4e9b-9720-f366e20f9720)
+
+Esta parte do código simula o processo de download.
+
+![image](https://github.com/user-attachments/assets/5fafd0bf-fc95-490c-9874-9bb67ff0629e)
+
+Este código implementa um sistema de download real em JavaScript, substituindo a simulação por uma requisição HTTP que baixa um arquivo e exibe o progresso em tempo real.
+
+
+![image](https://github.com/user-attachments/assets/8023c807-5a27-41c8-8346-476be1ebbd36)
+![image](https://github.com/user-attachments/assets/83462737-d513-4e99-8275-c4ce9d0f321f)
+
+
+Este trecho de código JavaScript adiciona um event listener ao botão de cancelar (btnCancelar), permitindo que o usuário interrompa um download em andamento. Quando clicado, ele executa as seguintes ações: interrompe o processo, atualiza a interface, exibe a mensagem de cancelamento, remove o spinner e oculta o botão cancelar. 
+
+![image](https://github.com/user-attachments/assets/d58a5a24-0b15-48f1-a0c9-bb3dbb2e9614)
 
 
 
