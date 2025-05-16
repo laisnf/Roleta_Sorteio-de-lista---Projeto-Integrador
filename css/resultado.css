@@ -20,7 +20,7 @@
 
 .resultado-posicao {
     font-size: 1.5rem;
-    color: #0a000a;
+    color: #000000;
     margin: 20px 0;
 }
 
@@ -40,29 +40,6 @@
     display: flex;
     justify-content: center;
     gap: 15px;
-}
-
-/* Animação de confetti */
-.cannon {
-    position: relative;
-    height: 200px;
-    margin: 20px 0;
-    overflow: hidden;
-}
-
-.cannon__path {
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 4px;
-    height: 150px;
-    transform-origin: 50% 100%;
-}
-
-.cannon__confetti {
-    position: absolute;
-    left: 50%;
-    animation: confetti-fall 5s linear infinite;
 }
 
 /* Responsividade */
