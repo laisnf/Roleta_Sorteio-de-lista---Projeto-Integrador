@@ -1,12 +1,65 @@
 #Páginas mobile 
 
 
+					#Página Index
+
+
+A página index.html faz parte do projeto “Sorteador de lista”. É a primeira página a ser exibida quando o acesso for em dispositivos móveis. Esse acesso ocorrerá por meio do escaneamento do QRCode na página desktop do proprietário da lista a ser sorteada.    
+Dessa forma, acessando por esse código de barras o vendedor insere seus dados na lista que será sorteada através do formulário. Será necessário que adicione nome, equipe e supervisão e ao clicar em “enviar” esses dados serão inseridos na lista e a página será direcionada à página seguinte: espera.html. Caso clique em “Apagar”, os dados serão apagados do formulário. A página vai apresentar também um cabeçalho onde vão constar os dados: empresa, empreendimento/departamento, data e período. Esses dados serão inseridos de forma automática pela API do backend. Nessa página foram usadas as tecnologias Bootstrap 5.3.2, HTML5, CSS3 e JavaScript.
+Para a construção do cabeçalho foi usado divisão (containers) e classe “spinner” de forma que enquanto o backend não traz os dados o sistema mostra que está em carregamento. Assim, foi criada uma constante que traz a URL da API do backend e uma função assíncrona que vai chamar esses dados da API.
+O formulário onde serão inseridos os dados do vendedor foi feito utilizando tags HTML “label” e “input”, sendo que a data foi formata para o padrão do Brasil. Esses dados serão validados por meio de um evento (listener).
+Nessa página há também dois botões, onde ao clicar “Enviar” surge um pop up que informa se houve sucesso no envio ou não. E ao clicar “Apagar”, o conteúdo do formulário é apagado. Em seguida, ao concluir o cadastro a página é redirecionada para a página espera.html. Isso ocorre por meio da propriedade do JavaScript “window.location.href = 'espera.html'”.
+
+
+
+
+![formulario](https://github.com/user-attachments/assets/3c07b510-af4e-4c45-952f-23efbd3bbc61)
+
+					#Página “erro”
+
+Esta página vai sempre mostrar um erro quando o usuário colocar um nome que já tenha sido cadastrado no banco de dados, sendo que o sistema vai desconsiderar, portanto, maiúscula e minúscula ou cedilha.
+Para isso, foi utilizado uma divisão de classe container para informar o erro.
+Foi disponibilizado também um botão para que o usuário retorne à página de formulário para realizar um novo cadastro. Para a construção desse botão foi usado o evento addEventListener em JavaScript que vai retornar a constante fallbackURL que vai retornar para a página index.html.
+
+
+
+
+
+
 
   A página index do projeto Sorteador de Lista foi criada para disponibilizar um formulário ao usuário do Sorteador para que aquele coloque seus dados na roleta a partir de um dispositivo móvel e assim participe com seu nome no sorteio 
   de nomes. Essa página abrirá para o usuário através de um QRCode gerado na página inicial do sorteio. As tecnologias utilizadas foram HTML5. CSS3, JavaScript e framework Bootstrap 5.3.2.
 
 
-  
+  ![error](https://github.com/user-attachments/assets/54ba4cfc-c854-4e73-926d-bd0b42d92e0d)
+
+
+					#Página Espera
+
+Essa página solicita ao usuário que aguarde o sorteio terminar para que apresente a posição que ele está na lista sorteada.
+Para isso, foi usada uma animação de quadrado que gira infinitamente até que o sorteio da lista seja concluído. Essa animação foi construída através da função “setTimeout ()”. E uma função assíncrona vai verificar o resultado a cada três segundos. Quando o sorteio for concluído a página será redirecionada para a página resultado.html que vai mostrar a posição do vendedor na lista que foi sorteada. Esse redirecionamento será possível através da propriedade JavaScript “window.location.href = "resultado.html".
+
+
+![Espera](https://github.com/user-attachments/assets/7836ac64-aa16-43df-be1c-cfd36bd72148)
+
+
+					#Página “resultado”
+
+
+Esta página será apresentada ao usuário após este concluir o cadastro com sucesso e assim que o sorteio for realizado. Ela vai mostrar a posição do usuário na lista já sorteada. Para que isso ocorra foi inserido no código JavaScript a rota do backend. A posição será exibida ao usuário através da função obterNomeUsuario ().
+Nesta página, o usuário também poderá optar por baixar o a lista sorteada no formato PDF, ou, sair da página, através dos botões “Salvar” e “Sair”.
+
+![resultado](https://github.com/user-attachments/assets/13df7e49-77c4-4e59-9121-49a170bebd26)
+
+
+					#Página “agradecimento”
+
+A página agradecimento.html é a última página do aplicativo mobile, onde apre-senta uma animação de agradecimento ao usuário que utilizou o serviço do sorteador de lista. Em 20 segundos após a exibição a página será redirecionada para a página desktop inicial index.html, onde consta o QRCode para um novo escaneamento para que possa abrir um novo formulário para preenchimento. 
+
+
+![agradecimento](https://github.com/user-attachments/assets/36dae2b8-c0cb-473b-9997-176a1f7d6f84)
+
+
 
 
 ##Estrutura HTML da página Index
